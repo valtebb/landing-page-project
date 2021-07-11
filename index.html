@@ -1,64 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Landing Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Landing Page</title>
-</head>
-
-<body>
-  <nav>
-    <div class="container">
-      <ul></ul>
-    </div>
-  </nav>
-  <section id="section1">
-    <h1>Places to see in London</h1>
-  </section>
-  <section id="section2">
-    <div class="section_container">
-      <div class="section_info">
-        <h2>Tower Bridge</h2>
-        <p class="top_section">Tower Bridge is a Grade I listed combined bascule and suspension bridge in London, built between 1886 and
-          1894, engineered by John Wolfe Barry and architected by Horace Jones. The bridge crosses the River Thames
-          close to the Tower of London and is one of five London bridges owned and maintained by the Bridge House
-          Estates, a charitable trust founded in 1282. The bridge was constructed to give better access to the East End
-          of London that had expanded its commercial potential in the 19th century, and was opened by the Prince of
-          Wales and Princess of Wales.</p>
+  <body>
+    <nav>
+      <div class="container">
+        <ul></ul>
       </div>
-      <img src="img/tower_bridge.jpg" alt="Tower bridge">
-    </div>
-  </section>
-  <section id="section3">
-        <div class="section_container">
-      <div class="section_info">
-        <h2>Natural History Museum</h2>
-        <p>The Natural History Museum in London is a natural history museum that exhibits a vast range of specimens from various segments of natural history. It is one of three major museums on Exhibition Road in South Kensington, the others being the Science Museum and the Victoria and Albert Museum. </p>
-        <p>The museum is home to life and earth science specimens comprising some 80 million items within five main collections: botany, entomology, mineralogy, palaeontology and zoology. </p>
+    </nav>
+    <section id="section1" data-nav="Home" class="active">
+      <h1>Places to see in London</h1>
+    </section>
+    <section id="section2" data-nav="Tower Bridge">
+      <div class="section_container">
+        <div class="section_info">
+          <h2>Tower Bridge</h2>
+          <p class="top_section">
+            Tower Bridge is a Grade I listed combined bascule and suspension
+            bridge in London, built between 1886 and 1894, engineered by John
+            Wolfe Barry and architected by Horace Jones. The bridge crosses the
+            River Thames close to the Tower of London and is one of five London
+            bridges owned and maintained by the Bridge House Estates, a
+            charitable trust founded in 1282. The bridge was constructed to give
+            better access to the East End of London that had expanded its
+            commercial potential in the 19th century, and was opened by the
+            Prince of Wales and Princess of Wales.
+          </p>
+        </div>
+        <img src="img/tower_bridge.jpg" alt="Tower bridge" />
       </div>
-      <img src="img/natural _history_museum .jpg" alt="Natural history museum">
-    </div>
-  </section>
-  <section id="section4">
-        <div class="section_container">
-      <div class="section_info">
-        <h2>Borough Market</h2>
-        <p>Borough Market is a wholesale and retail market hall in Southwark, London, England. It is one of the largest and oldest food markets in London, with a market on the site dating back to at least the 12th century. The present buildings were built in the 1850s, and today the market mainly sells speciality foods to the general public. </p>
-        <p>A market that originally adjoined the end of London Bridge was first mentioned in 1276, although the market itself claims to have existed since 1014 "and probably much earlier"[ and was subsequently moved south of St Margaret's church on the High Street.</p>
+    </section>
+    <section id="section3" data-nav="Natural History Museum">
+      <div class="section_container">
+        <div class="section_info">
+          <h2>Natural History Museum</h2>
+          <p>
+            The Natural History Museum in London is a natural history museum
+            that exhibits a vast range of specimens from various segments of
+            natural history. It is one of three major museums on Exhibition Road
+            in South Kensington, the others being the Science Museum and the
+            Victoria and Albert Museum.
+          </p>
+          <p>
+            The museum is home to life and earth science specimens comprising
+            some 80 million items within five main collections: botany,
+            entomology, mineralogy, palaeontology and zoology.
+          </p>
+        </div>
+        <img
+          src="img/natural _history_museum .jpg"
+          alt="Natural history museum"
+        />
       </div>
-      <img src="img/borough_market.jpg" alt="borough market">
-    </div>
-  </section>
-  <section id="section5">
-    <p>&copyVal Tebbitts</p>
-  </section>
+    </section>
+    <section id="section4" data-nav="Borough Market">
+      <div class="section_container">
+        <div class="section_info">
+          <h2>Borough Market</h2>
+          <p>
+            Borough Market is a wholesale and retail market hall in Southwark,
+            London, England. It is one of the largest and oldest food markets in
+            London, with a market on the site dating back to at least the 12th
+            century. The present buildings were built in the 1850s, and today
+            the market mainly sells speciality foods to the general public.
+          </p>
+          <p>
+            A market that originally adjoined the end of London Bridge was first
+            mentioned in 1276, although the market itself claims to have existed
+            since 1014 "and probably much earlier"[ and was subsequently moved
+            south of St Margaret's church on the High Street.
+          </p>
+        </div>
+        <img src="img/borough_market.jpg" alt="borough market" />
+      </div>
+    </section>
+    <section id="section5" data-nav="">
+      <p>&copyVal Tebbitts</p>
+    </section>
 
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
 
 <!-- <img src="img/london.jpg" alt="London"> -->

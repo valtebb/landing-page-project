@@ -74,6 +74,10 @@ nav .container ul li.active {
   transition: 0.3 ease background-color;
 }
 
+nav .container ul li .active a {
+  color: #fff;
+}
+
 p {
   font-size: 0.6em;
   font-family: 'Roboto', sans-serif;
@@ -100,9 +104,13 @@ p {
 }
 
 section {
-  background-color: #cdf0ea;
+  background-color: #c7dbd8;
   margin: 10px auto;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+section.active {
+  border-color: #959c9b;
 }
 
 .section_container {
