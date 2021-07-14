@@ -1,39 +1,37 @@
 // Building menu
 
 const navList = document.querySelector('ul');
-const sections = document.querySelectorAll('section');
-const nav = document.querySelectorAll('nav .container ul li');
+// const sections = document.querySelectorAll('section');
+const sections = Array.from(document.getElementsByTagName("section"));
+console.log(sections);
+const nav = document.querySelectorAll('.container ul li');
+console.log(nav);
 
 for(section of sections) {
   let listItem = document.createElement('li');
-  listItem.setAttribute('class', `sections${ 1}`)
   let link = document.createElement('a');
   link.textContent = section.dataset.nav;
   listItem.appendChild(link);
+  link.addEventListener('click', () => {
+    section.scrollIntoView({behavior: 'smooth'})
+  })
   navList.appendChild(listItem);
 }
 
 
-  
-  // Set navigation items to activate when on particular section
-  
-  window.addEventListener('scroll', ()=> {
-  let current = '';
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if(pageXOffset >= sectionTop){
-      current = section.getAttribute('id');
+const listerner = function(){
+  sections.forEach(zone => {
+    zone.getBoundingClientRect();
+    if(zone.getBoundingClientRect().top >= 83 && zone.getBoundingClientRect().top <= 376){
+      zone.classList.add('active');
+    }
+    else{
+      zone.classList.remove('active');
     }
   })
-  nav.forEach(li => {
-    li.classList.remove('active');
-    if(li.classList.contains(current)){
-      li.classList.add('active')
-    }
-  })
+}
+document.addEventListener('scroll', listerner);
 
-  })
-  
+
 
 
