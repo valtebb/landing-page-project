@@ -10,7 +10,6 @@
 html {
   font-family: 'Zen Loop', cursive;
   font-size: 1.5em;
-  /* scroll-behavior: smooth; */
 }
 
 h1 {
@@ -19,21 +18,7 @@ h1 {
 
 h2 {
   color: #413055;
-}
-
-#section1 {
-  background-image: url('../img/london.jpg');
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-}
-
-section.active__section {
-  background-color: #D9AFD9;
-  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-  transition: 0.3 ease background-color;
-  border: 1px solid royalblue;
-
+  padding-top: 20vh;
 }
 
 
@@ -95,6 +80,27 @@ p {
   color: #907fa4;
 }
 
+section {
+  background-color: #c7dbd8;
+  margin: 10px auto;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#section1 {
+  background-image: url('../img/london.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+section.active__section {
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  transition: 0.3 ease background-color;
+  border: 1px solid royalblue;
+
+}
+
 #section1 {
   display: flex;
   align-items: center;
@@ -102,24 +108,14 @@ p {
 }
 
 #section5 {
-  padding: 1em;
+  padding: 0.5em;
   color: #fff;
   height: 10vh;
 }
 
 #section5 p {
   color: #413055;
-  font-size: 0.8em;
-}
-
-section {
-  background-color: #c7dbd8;
-  margin: 10px auto;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-
-section.active {
-  border-color: #959c9b;
+  font-size: 0.7em;
 }
 
 .section_container {
@@ -139,13 +135,18 @@ img {
 
   h1,
   h2 {
-    font-size: 2em;
+    /* font-size: 2em; */
+    font-size: 1.5em;
+  }
+
+  h2 {
+    padding-top: 1vh;
   }
 
   p {
     font-size: 0.6em;
     line-height: 3vh;
-    margin-top: 40px;
+    /* margin-top: 30px; */
   }
 
   section {
@@ -161,7 +162,6 @@ img {
   }
 
 
-
   #section1 {
     width: 100%;
     background-size: cover;
@@ -175,7 +175,7 @@ img {
   .section_container {
     display: flex;
     width: 100%;
-    /* height: 80vh; */
+
   }
 
   img {
@@ -190,6 +190,9 @@ img {
     padding: 0 30px;
   }
 
+
+
+
   section:nth-of-type(odd) .section_container {
     flex-direction: row-reverse;
   }
@@ -200,7 +203,6 @@ img {
 
   h1,
   h2 {
-
     font-size: 36px;
   }
 
@@ -217,13 +219,14 @@ img {
   img {
     height: 60vh;
     width: 40%;
-    margin-top: 2em;
+    margin-top: 5em;
     border-radius: 0.1em;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
 
   section {
     width: 90%;
+    height: 100vh;
   }
 
   .section_container {
@@ -233,7 +236,7 @@ img {
   }
 
   .top_section {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 
   .section_info {
