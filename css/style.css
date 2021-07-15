@@ -28,7 +28,7 @@ h2 {
   background-size: cover;
 }
 
-section.active {
+section.active__section {
   background-color: #D9AFD9;
   background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
   transition: 0.3 ease background-color;
@@ -78,14 +78,14 @@ nav .container ul li a:hover {
   opacity: 0.3;
 }
 
-/* nav .container ul li.active {
+nav .container ul li.active {
   background-color: #a58faa;
   transition: 0.3 ease background-color;
 }
 
 nav .container ul li .active a {
   color: #fff;
-} */
+}
 
 p {
   font-size: 0.6em;
